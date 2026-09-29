@@ -64,8 +64,8 @@ main a:focus {
 /* ---- Lezen: welke elementen raken deze vijf selectors? Schrijf het antwoord
    in één zin per selector in README.md. Verander hier niets. ---- */
 
-/* a. header nav ul li a =  alle links in listed items in de ul */ 
-/* b. article > p = alle paragrafen die een direct kind zijn van article */
-/* c. .uren li:nth-child(3) = de derde kind van class uren */
-/* d. h2 ~ p = elke p die na h2 komt*/
-/* e. .rassen li:first-child = de eerste kind van class rassen */
+/* a. header nav ul li a */ 
+/* b. article > p  */
+/* c. .uren li:nth-child(3) */
+/* d. h2 ~ p */
+/* e. .rassen li:first-child  */

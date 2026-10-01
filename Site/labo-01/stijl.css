@@ -1,15 +1,36 @@
 :root {
-    --color-paper: rgb(255, 255, 255);
-    --color-ink: rgb(255, 87, 115);
+    --color-paper: #fdfefe;
+    --color-ink: #e73030; 
+    --color-secondaryInk: black;
 
 }
 
 body {
     background-color: var(--color-paper);
-    
+
 }
 
 h1 {
     text-align: center;
     color: var(--color-ink);
+    font-size: 2.75rem;
+    /*zoek buiten accenten dinge voor de titel*/
 }
+
+nav a {
+    text-decoration: 0;
+    color: var(--color-secondaryInk);
+    font-weight: 900;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: rgb(169, 255, 177);
+} 
+
+footer {
+    text-align: center;
+}
+
+

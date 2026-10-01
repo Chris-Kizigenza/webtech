@@ -1,0 +1,12 @@
+:root {
+    --color-paper: rgb(202, 243, 252);
+}
+
+body {
+    background-color: var(--color-paper);
+    
+}
+
+h1 {
+    text-align: center;
+}

@@ -2,26 +2,65 @@
     --color-paper: #fdfefe;
     --color-ink: #e73030; 
     --color-secondaryInk: black;
-
+    --font-heading: Garamond, serif;
+    --font-body: Verdana, sans-serif;
 }
 
 body {
     background-color: var(--color-paper);
+    line-height: 1.7;
+    font-size: 1.03rem;
+    font-family: var(--font-body);
 
+}
+
+h1 + p {
+    color: rgb(61, 61, 61);
 }
 
 h1 {
     text-align: center;
     color: var(--color-ink);
     font-size: 2.75rem;
-    /*zoek buiten accenten dinge voor de titel*/
+    font-family: var(--font-heading);
+    font-weight: 900;
+     
+}
+
+h2, h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    
+}
+
+
+ol li:nth-child(odd){
+    background-color: rgb(249, 255, 223); 
+}
+
+ol li:nth-child(even){
+    background-color: rgb(242, 208, 255); 
+}
+
+.hobbies {
+    
+    outline: 6px dashed rgb(51, 249, 249);
+}
+
+.muziek{
+    text-align: center;
+}
+
+p a {
+    color: black;
 }
 
 nav a {
     text-decoration: 0;
     color: var(--color-secondaryInk);
     font-weight: 900;
-    text-align: center;
+   
+    
 }
 
 nav a:hover,
@@ -31,6 +70,11 @@ nav a:focus {
 
 footer {
     text-align: center;
+    font-style: italic;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    color:#7e7a7a;   
+    
 }
 
 

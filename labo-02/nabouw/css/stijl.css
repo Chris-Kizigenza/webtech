@@ -20,14 +20,21 @@ body {
     
 }
 
-h1, h2, h3 {
+ h3 {
     font-family: var(--font-heading);
+    font-weight: normal; 
+    
+}
+
+h1, h2 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
     font-weight: normal; 
 }
 
 h1 {
    color: var(--color-accent);
-    
+   font-size: 2.75rem;
 }
 
 p a{
@@ -46,15 +53,17 @@ h3 {
 .slogan{
     font-style: italic; 
     font-size: var(--font-size);
+    
 }
 
 nav a {
     color: var(--color-accent);
     font-weight: bold; 
+    text-decoration: 0;
 }
 
 .intro{
-    
+    font-size: 1.25rem;
 }
 
 .kaart li:nth-child(odd) {
@@ -70,9 +79,11 @@ nav a {
 footer {
     text-align: center; 
     color: var(--color-muted);
-    
+    font-size: 0.75rem;
 }
 
 footer a {
     color: var(--color-muted);
+     
 }
+

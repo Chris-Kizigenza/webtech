@@ -1,5 +1,6 @@
 :root {
-    --color-paper: rgb(236, 255, 223);
+    --color-paper: rgb(255, 255, 255);
+
 }
 
 body {
@@ -9,4 +10,5 @@ body {
 
 h1 {
     text-align: center;
+    color: rgb(255, 87, 115);
 }

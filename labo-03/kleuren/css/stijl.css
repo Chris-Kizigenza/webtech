@@ -2,7 +2,70 @@
 
 /* === tokens === */
 :root {
+--font-body: Arial; 
+--color-ink: white; 
 
 }
 
 /* === your rules === */
+
+body {
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    text-align: center; 
+    letter-spacing: 0.25rem;
+    line-height: 2.6em;
+
+}
+
+ul li {
+    list-style: none; 
+    padding: 8rem; 
+    
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.codes {
+    font-size: small;
+    
+}
+
+p span {
+    letter-spacing: normal;
+}
+
+.tomato {
+     
+    
+    background-color: tomato;
+
+}
+
+.orangered  {
+    
+    
+    background-color: orangered;
+}
+
+.coral {
+   
+   
+    background-color: coral;
+}
+
+.lightsalmon {
+    
+    
+    background-color: lightsalmon; 
+}
+
+.darkorange {
+     
+    
+    background-color: darkorange;
+}

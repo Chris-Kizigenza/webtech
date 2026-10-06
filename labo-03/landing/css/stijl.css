@@ -2,7 +2,110 @@
 
 /* === tokens === */
 :root {
+    
 
 }
 
 /* === your rules === */
+
+body {
+    font-family: arial;
+
+}
+
+div p {
+    text-align: center; 
+    background-color: #c8b8ff;
+    padding: 1em;
+}
+
+p a {
+    color: #5551ff;
+}
+
+ul li {
+    display: inline-block; 
+     
+}
+
+li a {
+    text-decoration: none; 
+    color: black; 
+    padding-right: 1.50rem;
+    
+    
+}
+
+header {
+    text-align: right; 
+    padding-top: 0.50rem;
+    padding-bottom: 0.50rem;
+}
+
+main {
+    background-color: #779cee;
+    min-height: 80vh;
+     
+}
+
+.bovenkop {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 10rem;
+    font-size: 1.5rem;
+    
+}
+
+article h1 {
+    
+    padding-left: 3.75rem;
+    font-size: 3rem;
+}
+
+article p {
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 7rem;
+    padding-bottom: 3rem;
+    line-height: 1.75rem;
+    font-size: 1.10rem;
+}
+
+.knop {
+    
+    background-color: black;
+    margin-left: 4rem;
+    text-decoration: none;
+    color: white;
+    padding-top: 0.80rem;
+    padding-bottom: 0.80rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; 
+    border-radius: 0.50rem;
+    
+
+}
+
+article, 
+.afbeelding {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top; 
+}
+
+.afbeelding {
+    text-align: right; 
+}
+
+.afbeelding img {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+    padding-left: 3rem;
+    width: 70%;
+}
+
+a:hover,
+a:focus {
+    background-color:#333333; 
+}

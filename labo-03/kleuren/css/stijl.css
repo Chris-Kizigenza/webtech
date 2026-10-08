@@ -12,16 +12,22 @@
 body {
     color: var(--color-ink);
     font-family: var(--font-body);
-    text-align: center; 
     letter-spacing: 0.25rem;
-    line-height: 2.6em;
+    
 
 }
 
 ul li {
     list-style: none; 
-    padding: 8rem; 
+    padding: 9rem; 
+    height: 50vh; 
+    text-align: center; 
     
+    
+}
+
+li h2 {
+
 }
 
 
@@ -37,6 +43,7 @@ ul {
 
 p span {
     letter-spacing: normal;
+    margin: 0.25rem; 
 }
 
 .tomato {
@@ -53,9 +60,7 @@ p span {
 }
 
 .coral {
-   
-   
-    background-color: coral;
+   background-color: coral;
 }
 
 .lightsalmon {

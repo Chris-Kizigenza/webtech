@@ -18,6 +18,8 @@ h1 + p {
     color: rgb(61, 61, 61);
 }
 
+
+
 h1 {
     text-align: center;
     color: var(--color-ink);
@@ -42,6 +44,15 @@ ol li:nth-child(even){
     background-color: rgb(242, 208, 255); 
 }
 
+ ul li {
+    display: inline-block; 
+    padding-left: 2%; 
+}
+
+nav ul {
+    text-align: end; 
+}
+
 .hobbies {
     
     outline: 6px dashed rgb(51, 249, 249);
@@ -59,8 +70,6 @@ nav a {
     text-decoration: 0;
     color: var(--color-secondaryInk);
     font-weight: 900;
-    
-   
     
 }
 

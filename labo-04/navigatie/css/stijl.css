@@ -1,0 +1,60 @@
+/* stijl.css - labo 4, navigatie (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+
+/* === your rules === */
+body {
+    font-family: verdana; 
+    
+}
+
+header {
+    padding: 1rem 2rem; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #1f3a2e; 
+
+}
+
+header a {
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: #e6b53c; 
+}
+
+li a {
+    font-size: 0.90rem; 
+    font-weight: lighter; 
+    color: white; 
+    padding: 0.75rem 1.25rem; 
+    
+}
+
+
+ul {
+    display: flex; 
+    gap: 0.5rem;
+    
+    
+}
+
+ul li {
+      list-style-type: none; 
+      font-size: small;  
+      
+}
+
+
+
+a:hover, 
+a:focus {
+    background-color: #e6b53c; 
+    border-radius: 0.5rem; 
+}

@@ -6,3 +6,69 @@
 }
 
 /* === your rules === */
+
+main {
+    font-weight: bold;
+    font-family: verdana;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1.5rem;
+   
+
+    
+}
+
+.citaat {
+    border-left: 0.5rem solid currentcolor;
+    padding: 0.5rem 1rem;  
+    flex: 1 1 18rem; 
+}
+
+cite {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.875rem;
+}
+
+.blauw {
+    color: #1e5bd8
+}
+
+.roze {
+    color: #e88bb4;
+}
+
+.rood {
+    color: #c51f2a;
+}
+
+.oranje {
+    color: #d98c1a;
+}
+
+.groen {
+    color: #3b7a2a;
+}
+
+.salie {
+    color: #8fb89a;
+}
+
+.paars {
+    color: #7b4fa3;
+}
+
+.grijs {
+    color: #6b6b6b;
+}
+
+.blauw  {grid-area: a;}
+.grijs {grid-area: b;}
+.groen {grid-area: c;}
+.oranje {grid-area: d;}
+.paars {grid-area: e;}
+.rood {grid-area: f;}
+.roze {grid-area: g;}
+.salie {grid-area: h;}

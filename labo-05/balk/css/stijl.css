@@ -6,3 +6,102 @@
 }
 
 /* === your rules === */
+
+body {
+    background-color: #f8f7f5;
+    color: #1a1a1a;
+    font-family: verdana;
+}
+
+header {
+    background-color: #000000;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 1.5rem;
+    height: 3.5rem;
+    padding: 0 2rem;
+        
+}
+
+header { position: sticky; top: 0; }
+html { scroll-padding-top: 3.5rem; }
+
+header a {
+    text-decoration: none; 
+    color: white; 
+       
+}
+
+.logo {
+    font-family: georgia;
+}
+
+nav ul {
+    display: flex;  
+    list-style-type: none; 
+    gap: 1.5rem;
+   
+}
+
+ul li a {
+    text-decoration: none; 
+    color: #9a9a9a;
+    font-size: 0.75rem;
+    text-transform: uppercase; 
+    font-weight: normal; 
+    letter-spacing: 0.05rem;
+    
+}
+
+ol li a {
+    color: black;
+}
+
+.intro {
+    color: #6b6b6b;
+}
+
+main {
+    width: 44rem; 
+    padding: 2rem; 
+    line-height: 1.6; 
+    margin: 0 auto; 
+    
+}
+
+h1, h2 {
+    
+    font-family: georgia; 
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-top: 3rem;
+}
+ 
+p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #000000;
+    color: #9a9a9a;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+ul li a.actief,
+header a:hover,
+header a:focus { color: #ffffff; }

@@ -6,3 +6,169 @@
 }
 
 /* === your rules === */
+body {
+    background-color: #f4efe6; 
+    color: #2b2b2b; 
+    font-family: verdana; 
+    line-height: 1.6; 
+    display: grid; 
+    grid-template-columns: 16rem 1fr; 
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "kop kop"
+        "zijbalk inhoud"
+        "voet voet"
+}
+
+header { grid-area: kop; }
+aside { grid-area: zijbalk; }
+main { grid-area: inhoud; }
+footer { grid-area: voet; }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #2f241d; 
+    padding: 0rem 2rem; 
+    
+}
+
+header a {
+    text-decoration: none; 
+    color: #c8742e;
+    
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-family: georgia; 
+}
+
+nav ul {
+    display: flex; 
+    list-style-type: none; 
+    gap: 1.5rem;
+}
+
+li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 0.85rem;
+}
+
+
+
+aside {
+    padding: 2rem;
+    font-size: 0.875rem;
+    border-right: 1px solid #ddd5c8;
+}
+
+aside h2 {
+    font-size: 1rem;
+}
+
+aside p {
+    color:#6b6b6b; 
+}
+
+aside p { margin-bottom: 1rem; }
+
+h1, h2 {
+    font-family: georgia; 
+
+ }
+
+h1 {
+    font-size: 2.5rem; 
+ }
+
+h2 {
+    font-size: 1.5rem;
+ }
+
+main {
+    padding: 2rem; 
+}
+
+.intro {
+    color: #6b6b6b;
+}
+
+.kaarten {
+    display: grid; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; 
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.kaart {
+   
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.15);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    background-color: white; 
+    overflow: hidden 
+}
+
+.kaart img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    
+}
+
+.kaart:not(:has(img)) {
+    border-top: 0.5rem solid #c8742e;
+    
+}
+
+.tekst {
+    display: flex;
+    flex-direction: column; 
+    flex: 1; 
+    padding: 1.5rem;
+}
+
+.tekst h2 {
+    margin-bottom: 0.5rem;
+}
+
+.prijs {
+    color: #c8742e;
+    margin-top: auto;
+    font-weight: bold;
+    padding-top: 1rem;
+
+
+}
+
+
+.badge {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: #c8742e;
+    color: #f4efe6;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+}
+
+footer {
+    background-color: #2f241d; 
+    color: #f4efe6; 
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+ul li a.actief,
+header a:hover,
+header a:focus { color: #c8742e; }

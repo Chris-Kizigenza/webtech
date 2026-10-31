@@ -2,9 +2,50 @@
 
 /* === tokens === */
 :root {
-
+    --color-red:#b90020; 
+    --color-green:#349803;
+    --color-yellow:#ffcd00;
+    --color-blue:#006aff; 
 }
 
 /* === base: narrow screens first === */
 
+main {
+    min-height: 100svh; 
+    display: grid; 
+    grid-template-rows: repeat(4, 1fr)
+}
+
+.rood {
+    background-color: var(--color-red);
+}
+
+.groen {
+    background-color: var(--color-green);
+}
+
+.geel {
+    background-color: var(--color-yellow);
+}
+
+.blauw {
+    background-color: var(--color-blue);
+}
+
 /* === media queries: below the base rules === */
+
+@media (min-width: 37.5rem) {
+    main { 
+        display: grid;  
+        grid-template-rows: none;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 50rem) {
+    main {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+    }
+}

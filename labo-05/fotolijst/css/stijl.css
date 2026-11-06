@@ -8,61 +8,64 @@
 /* === your rules === */
 
 body {
-    background-color: #111111 ;
+    background-color: #111111;
     color: #f3efe6;
-    font-family: Verdana;
-    
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 .lijst {
-    width: 36rem; 
-    margin: 4rem auto;
-    position: relative;
+    width: 36rem;
+    margin: 4rem auto;   
+    position: relative;  
 }
 
-.lijst img {
+img {
+    aspect-ratio: 1 / 1; 
     width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    align-items: center; 
+    object-fit: cover; 
     
-}
-
-figcaption {
-    text-align: center; 
-    font-size: 0.875rem;
-    margin-top: 1rem;
 }
 
 .vlakje {
     width: 6rem;
     height: 6rem;
-    position: absolute;
+
 }
 
-.lijst .groen {
-    background-color: #4e9a52;
+.groen {
+    background-color:#4e9a52; 
+    position: absolute; 
     top: 2rem;
-    left:2rem;
+    left: 2rem;
+    z-index: 2;
 }
 
-.lijst .roze {
+.roze {
     background-color: #f2a7d6;
+    position: absolute; 
     top: 5rem;
-    left:5rem;
+    left: 5rem;
     z-index: 1;
 }
 
-.lijst .lime {
-    background-color: #b4f52d;
+.lime {
+    background-color: #b4f52d; 
+    position: absolute; 
     bottom: 6rem;
     right: 6rem;
+    z-index: 4;
 }
 
-.lijst .rood {
+.rood {
     background-color: #ea4d3d;
+    position: absolute;  
     bottom: 3rem;
     right: 3rem;
-    z-index: 2;
+    z-index: 5;
+}
+
+figcaption {
+    text-align: center; 
+    font-size: 0.875rem; 
+    padding-top: 1rem;
 }

@@ -1,76 +1,47 @@
-/* stijl.css - labo 3, kleuren (reset.css is linked before this file) */
+/* stijl.css - labo 3, kleurenstalen: modeloplossing */
 
 /* === tokens === */
 :root {
---font-body: Arial; 
---color-ink: white; 
-
+  --color-text: #ffffff;
+  --font-body: Arial, Helvetica, sans-serif;
+  --band-height: 50vh;
 }
-
-/* === your rules === */
 
 body {
-    color: var(--color-ink);
-    font-family: var(--font-body);
-    letter-spacing: 0.25rem;
-    
-
+  font-family: var(--font-body);
+  color: var(--color-text);
+  text-align: center;
 }
 
-ul li {
-    list-style: none; 
-    padding: 9rem; 
-    height: 50vh; 
-    text-align: center; 
-    
-    
-}
-
-li h2 {
-
-}
-
-
+/* the user agent stylesheet gives ul an indent and bullets: both off */
 ul {
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  height: var(--band-height);
+  padding-top: 11rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .codes {
-    font-size: small;
-    
+  font-size: 0.75rem;
 }
 
-p span {
-    letter-spacing: normal;
-    padding: 0 0.25rem; 
+.codes span {
+  margin: 0 0.75rem; /* horizontal margin works on inline boxes (3.6) */
 }
 
-.tomato {
-     
-    
-    background-color: tomato;
-
-}
-
-.orangered  {
-    
-    
-    background-color: orangered;
-}
-
-.coral {
-   background-color: coral;
-}
-
-.lightsalmon {
-    
-    
-    background-color: lightsalmon; 
-}
-
-.darkorange {
-     
-    
-    background-color: darkorange;
-}
+.tomato { background-color: tomato; }
+.orangered { background-color: orangered; }
+.coral { background-color: coral; }
+.lightsalmon { background-color: lightsalmon; }
+.darkorange { background-color: darkorange; }

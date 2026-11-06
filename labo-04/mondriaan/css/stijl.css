@@ -6,68 +6,51 @@
 }
 
 /* === your rules === */
-body {
-    place-items: center ; 
-    margin: 15vh 0;
-    
-}
-
 .schilderij {
     background-color: #2554ab; 
-    height: 70vh; 
     width: 70vh; 
+    height: 70vh; 
+    margin: 15vh auto; 
     border: 2vh solid #2554ab; 
-}
-
-main {
     display: grid; 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    border: 2vh solid #2554ab; 
     gap: 2vh; 
 }
 
 .lila {
-    grid-column: 1 / 4; 
     background-color: #a090af; 
-    
-    
-    
+    grid-row: 1; 
+    grid-column: 1 / 4; 
+     
 }
 
 .bruin {
-    grid-row: 1;
-    grid-column:  4; 
-    background-color: #a16122; 
-    
+    background-color: #a16122;
+    grid-row: 1; 
+    grid-column: 4 / 5; 
 }
 
 .geel {
-    grid-row: 2 / 3; 
-    grid-column: 1 / 2; 
     background-color: #e7c948; 
-    
+    grid-row: 2; 
+    grid-column: 1 / 2;
 }
 
 .marine {
-    grid-row: 2 / 3;
-    grid-column: 4; 
     background-color: #13234e; 
-    
-    
+    grid-row: 2; 
+    grid-column: 4 / 5; 
 }
 
 .olijf {
-    grid-row: 3 / 4; 
-    grid-column: 1 / 4; 
     background-color: #ae9310; 
-    
+    grid-row: 3; 
+    grid-column: 1 / 4; 
 }
 
 .rood {
-    grid-row: 3 / 4; 
-    grid-column: 4; 
     background-color: #cd2424; 
-    
-
+    grid-row: 3; 
+    grid-column: 4 / 5; 
 }

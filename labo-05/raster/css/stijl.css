@@ -7,69 +7,67 @@
 
 /* === your rules === */
 
-.vlak {
-    color: white;
-    font-size: 1.5rem;
-    font-family: Arial;
-    padding: 0.5rem 0.75rem 0 0;
-    text-align: right;
-    
+main {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    min-height: 100vh; 
+    gap: 1rem;
+    padding: 1rem; 
+    color: white; 
+    font-size: 1.5rem; 
+    font-family: Arial; 
+    grid-template-areas: 
+    "a . . b"
+    "c d e f"
+    "g . . h";
 
+}
+
+.vlak {
+    text-align: right;
+    padding: 0.5rem 0.75rem;    
 }
 
 .a {
-    background-color: #e9493f;
+    background-color: #e9493f; 
+    grid-area: a; 
 }
 
 .b {
-    background-color: #edd24a;
+    background-color: #edd24a; 
+    grid-area: b; 
 }
 
 .c {
-    background-color: #072f55;
+    background-color: #072f55; 
+    grid-area: c; 
 }
 
 .d {
-    background-color: #52a51a;
+    background-color: #52a51a; 
+    grid-area: d; 
 }
 
 .e {
-    background-color: #efaad9;
+    background-color: #efaad9; 
+    grid-area: e; 
 }
 
 .f {
-    background-color: #a5f129;
+    background-color: #a5f129; 
+    grid-area: f; 
 }
 
 .g {
-    background-color: #ebc47a ;
+    background-color: #ebc47a; 
+    grid-area: g; 
 }
 
 .h {
-    background-color: #e8882c;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem; 
-    grid-template-areas: 
-        "a . . b"
-        "c d e f"
-        "g . . h";
-    min-height: 100vh;
-    padding: 1rem;
-    
-    
+    background-color: #e8882c; 
+    grid-area: h; 
 }
 
 
-.a { grid-area: a; }
-.b { grid-area: b; }
-.c { grid-area: c; }
-.d { grid-area: d; }
-.e { grid-area: e; }
-.f { grid-area: f; }
-.g { grid-area: g; }
-.h { grid-area: h; }
+

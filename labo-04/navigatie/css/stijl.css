@@ -7,54 +7,43 @@
 
 
 /* === your rules === */
-body {
-    font-family: verdana; 
-    
-}
 
 header {
     padding: 1rem 2rem; 
-    display: flex; 
-    justify-content: space-between;
-    align-items: center; 
     background-color: #1f3a2e; 
-
+    color: #f3efe6; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    
 }
 
-header a {
-    text-decoration: none; 
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem; 
+.logo {
     color: #e6b53c; 
+    font-weight: bold; 
+    font-size: 1.25rem; 
+}
+
+ul {
+    display: flex;
+    gap: 0.5rem; 
+}
+
+a {
+    text-decoration: none; 
+    color: #f3efe6; 
+}
+
+li {
+    list-style: none; 
 }
 
 li a {
-    font-size: 0.90rem; 
-    font-weight: lighter; 
-    color: white; 
     padding: 0.75rem 1.25rem; 
-    
-}
-
-
-ul {
-    display: flex; 
-    gap: 0.5rem;
-    
-    
-}
-
-ul li {
-      list-style-type: none; 
-      font-size: small;  
-      
-}
-
-
-
-a:hover, 
-a:focus {
-    background-color: #e6b53c; 
     border-radius: 0.5rem; 
+}
+
+.actief {
+    background-color: #e6b53c;
 }

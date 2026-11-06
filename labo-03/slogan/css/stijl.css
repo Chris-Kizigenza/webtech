@@ -4,57 +4,49 @@
 :root {
     --color-ink: #282827; 
     --font-body: Arial;
+    --font-text: #282827;
+    --line-color: #fccc00;  
    
 }
 
 /* === your rules === */
 
 body {
-    text-align: center;
-    font-family: var(--font-body);
     max-width: 40rem; 
+    text-align: center; 
+    font-family: var(--font-body);
     margin: 0 auto; 
-    padding: 9rem 2rem;
+    color: var(--color-ink);
+    padding-top: 12rem; 
     
     
 }
-
 
 h2 {
-    font-size: 4.25rem;
-    padding: 1.75rem; 
-    
-    
-
-}
-
-p {
-    line-height: 1.65;
-    letter-spacing: 1px; 
-    padding-bottom: 2rem;
-    
+    font-size: 5rem;
+    margin-bottom: 1.9rem; 
 }
 
 h2 span {
-    border-bottom-style: solid;
-    border-radius: 100%;
-    border-width: 0.95rem;
-    border-color: #fccc00;
+    border-bottom: 1rem solid var(--line-color);
+    border-radius: 50%; 
+}
+
+p {
+    font-size: 1.20rem;
+    margin-bottom: 1.9rem;  
 }
 
 a {
-    display: inline-block;
-    font-size: small;
-    text-decoration: none;
-    background-color: black; 
-    padding: 0.75rem;
+    text-decoration: none; 
     color: white; 
-    border-radius: 5rem;
-    
-    
+    background-color: var(--color-ink);
+    padding: 0.75rem 1.25rem; 
+    border-radius: 1rem;
+    display: inline-block;  
 }
 
 a:hover,
 a:focus {
-    background-color:#333333; 
+    background-color: #333333;
 }

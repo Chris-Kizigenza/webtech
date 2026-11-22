@@ -6,32 +6,74 @@
 }
 
 /* === base: narrow screens first === */
-body {
-    background-color: #1d1d1b; 
 
+body {
+    background-color: #1d1d1d;
+    padding: 2rem 1rem;
+    color: #fff8ee;
 }
 
 .affiche {
-    background-color: #2554ab; 
-    font-family: #fff8ee; 
-    max-width: 28rem; 
-    aspect-ratio: 3 /4; 
-    margin: 2rem 1rem; 
-    padding: clamp(1.5rem, 6vw, 3rem);
+    background-color: #2554ab;
+    height: 32rem;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
+    padding: 1.5rem;
+    color: white; 
+    position: relative; 
 }
 
 h1 {
-    font-family: georgia; 
-    font-size: clamp(2rem, 8vw, 3.5rem);
-    line-height: 1.05; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 
-.ondertitel {
-    font-size: 0.875rem; 
-    text-transform: uppercase; 
-    letter-spacing: 0.1em;
+article p {
+    text-transform: uppercase;
 }
-/* === media queries: below the base rules === */
+
+.datum {
+    position: absolute; 
+    background-color: white; 
+    height: 4rem;
+    width: 4rem;
+    top: 1rem;
+    left: 1rem;
+    color: black;
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    padding-left: 0.25rem;
+}
+
+.logo {
+    position: absolute; 
+    background-color: black;
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    top: 5rem;
+    left: 5rem;
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    padding-left: 0.25rem;
+    color: white; 
+    
+}
+
+.uitverkocht {
+    position: absolute; 
+    background-color: red; 
+    height: 4rem; 
+    width: 4rem;
+    top: 8rem;
+    left: 8rem;
+    border-radius: 50%; 
+    text-align: center;
+    display: flex; 
+    align-items: center;
+    z-index: 1;  
+}
+
+

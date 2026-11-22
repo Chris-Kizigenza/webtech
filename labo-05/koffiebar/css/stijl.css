@@ -17,7 +17,7 @@ body {
     grid-template-areas:
         "kop kop"
         "zijbalk inhoud"
-        "voet voet"
+        "voet voet";
 }
 
 header { grid-area: kop; }
@@ -26,101 +26,128 @@ main { grid-area: inhoud; }
 footer { grid-area: voet; }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
     background-color: #2f241d; 
-    padding: 0rem 2rem; 
-    
-}
-
-header a {
-    text-decoration: none; 
-    color: #c8742e;
-    
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0.25rem 1.5rem;
 }
 
 .logo {
-    font-size: 1.25rem;
-    font-family: georgia; 
+    text-decoration: none; 
+    color: #c8742e; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 1.6rem;
 }
 
 nav ul {
+    list-style: none; 
     display: flex; 
-    list-style-type: none; 
-    gap: 1.5rem;
+    flex-direction: row; 
+    gap: 1.25rem;
 }
 
-li a {
+.actief {
+    color:#c8742e;
+}
+
+nav ul li a {
     text-decoration: none; 
-    color: white; 
-    font-size: 0.85rem;
+    color:#f4efe6;
 }
 
+h2, h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+/* ============= ZIJBALK ============== */
 
 aside {
-    padding: 2rem;
-    font-size: 0.875rem;
     border-right: 1px solid #ddd5c8;
+    padding: 1.5rem; 
+    font-size: 0.8rem;
+}
+
+aside > p {
+    color:#6b6b6b;
 }
 
 aside h2 {
-    font-size: 1rem;
+    padding-bottom: 0.2rem;
 }
 
-aside p {
-    color:#6b6b6b; 
+aside p:nth-of-type(1) {
+    padding-bottom: 1rem;
 }
 
-aside p { margin-bottom: 1rem; }
-
-h1, h2 {
-    font-family: georgia; 
-
- }
-
-h1 {
-    font-size: 2.5rem; 
- }
-
-h2 {
-    font-size: 1.5rem;
- }
+/* ============= MAIN INHOUD ============== */
 
 main {
-    padding: 2rem; 
+    padding: 2rem;
 }
 
 .intro {
-    color: #6b6b6b;
+    color:#6b6b6b;
+    padding-top: 0.2rem;
 }
 
 .kaarten {
     display: grid; 
-    grid-template-rows: 1fr 1fr; 
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem; 
-    list-style-type: none; 
-    padding: 0; 
+    gap: 1rem;
+    padding-left: 0;
 }
 
 .kaart {
-   
+    background-color: white; 
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.15);
-    position: relative;
+    overflow: hidden; 
+    position: relative; 
     display: flex; 
-    flex-direction: column;
-    background-color: white; 
-    overflow: hidden 
+    flex-direction: column; 
 }
 
-.kaart img {
+.tekst {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+}
+
+.tekst h2 {
+    padding-bottom: 0.85rem;
+}
+
+.prijs {
+    color:#c8742e;
+    font-weight: bold; 
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+ul li {
+    list-style: none; 
+}
+
+img {
     width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    
+    aspect-ratio: 4 / 3;
+    object-fit: cover;  
+}
+
+.badge {
+    position: absolute;
+    top: 0.85rem;
+    right: 0.85rem;
+    background-color: #c8742e;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;      /* pill shape */
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
 
 .kaart:not(:has(img)) {
@@ -128,47 +155,11 @@ main {
     
 }
 
-.tekst {
-    display: flex;
-    flex-direction: column; 
-    flex: 1; 
-    padding: 1.5rem;
-}
-
-.tekst h2 {
-    margin-bottom: 0.5rem;
-}
-
-.prijs {
-    color: #c8742e;
-    margin-top: auto;
-    font-weight: bold;
-    padding-top: 1rem;
-
-
-}
-
-
-.badge {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    background: #c8742e;
-    color: #f4efe6;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-}
+/* ============= FOOTER ============== */
 
 footer {
-    background-color: #2f241d; 
-    color: #f4efe6; 
-    font-size: 0.875rem;
-    text-align: center;
-    padding: 1rem;
+    text-align: center; 
+    padding: 1rem; 
+    background-color:#2f241d;
+    color: white; 
 }
-
-ul li a.actief,
-header a:hover,
-header a:focus { color: #c8742e; }

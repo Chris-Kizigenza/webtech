@@ -3,8 +3,180 @@
 /* === tokens for look A: colours, fonts, radius, type scale, spacing scale === */
 :root {
 
+    --color-paper: hsl(40 30% 96%);
+    --color-ink: hsl(220 20% 15%);
+    --color-muted: hsl(220 10% 42%);
+    --color-accent: hsl(160 50% 30%);
+    --color-line: hsl(40 15% 82%);
+
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: 1.953rem;
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
+
+    --radius: 0;
+
+    --font-headings: Georgia, 'Times New Roman', Times, serif;
+    --font-text: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-/* === base === */
+body {
+    font-family: var(--font-text);
+    font-size: var(--text-m);
+    line-height: 1.5;
+    color: var(--color-ink);
+    background-color: var(--color-paper);
+}
 
-/* === header, intro, cards, footer: every colour via var(), nothing hard-coded === */
+.kop {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-m) var(--space-l);
+    border-bottom: 1px solid var(--color-line);
+    align-items: center; 
+
+}
+
+.naam {
+    font-family: var(--font-headings);
+    font-size: var(--text-l);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--space-m);
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li a {
+    text-decoration:none;
+    color: var(--color-ink);
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a:focus {
+    color : var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-headings);
+}
+
+h3 {
+    font-size: var(--text-l);
+    margin-bottom: var(--space-s);
+}
+
+.intro {
+    max-width: 44rem;
+    padding: var(--space-xl) var(--space-l);
+
+} 
+
+.bovenkop {
+    font-size: var(--text-s);
+    color: var(--color-accent);
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-s);
+}
+
+h1 {
+    font-size: var(--text-xxl);
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: var(--space-m);
+}
+
+.lead {
+    font-size: var(--text-l);
+    color: var(--color-muted);
+    margin-bottom: var(--space-l);
+}
+
+.intro a {
+    text-decoration: none;
+    color: var(--color-paper);
+    background-color: var(--color-accent);
+    font-weight: bold;
+    padding: var(--space-s) var(--space-l);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius);
+    display: inline-block;
+}
+
+.intro a:hover,
+.intro a:focus {
+    color: var(--color-accent);
+    background-color:var(--color-paper);
+}
+
+.diensten {
+    margin-left: var(--space-l);
+    margin-right: var(--space-l);
+    margin-bottom: var(--space-xl);
+}
+
+h2 {
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-m);
+}
+
+ul li {
+    list-style: none;
+}
+
+.kaarten {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: var(--space-m);
+    margin: 0;
+    padding: 0;
+}
+
+.kaart {
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    padding: var(--space-m);
+    display: flex;
+    flex-direction: column; 
+    color: var(--color-muted);
+
+}
+
+.kaart p {
+    margin-bottom: var(--space-m);
+}
+
+.kaart h3 {
+    color: var(--color-ink);
+}
+
+.prijs {
+    font-weight: bold; 
+    color: var(--color-accent);
+    margin-top: auto;
+}
+
+footer {
+    border-top: 1px solid var(--color-line);
+    padding: var(--space-m) var(--space-l);
+    color: var(--color-muted);
+    font-size: var(--text-s);
+}
